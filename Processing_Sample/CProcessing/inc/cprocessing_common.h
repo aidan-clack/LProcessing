@@ -49,6 +49,9 @@ typedef struct			CP_Image_Struct* CP_Image;
 typedef struct			CP_Sound_Struct* CP_Sound;
 typedef struct			CP_Font_Struct* CP_Font;
 
+#define CP_FALSE 0
+#define CP_TRUE 1
+
 
 //---------------------------------------------------------
 // Function Pointer

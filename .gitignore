@@ -53,6 +53,7 @@ dkms.conf
 
 # Project specific VS and output folders
 Processing_Sample/.vs/
+Processing_Sample/.vs/
 Processing_Sample/CProcessing/x64/
 Processing_Sample/x64/
 Processing_Sample/CProcessing/Win32/
@@ -71,3 +72,5 @@ CProcessingOutput/
 Processing_Sample/Processi.14B654ED/
 Processing_Empty/Processi.14B654ED/
 Processing_Sample/Intermediate/
+
+.vs/

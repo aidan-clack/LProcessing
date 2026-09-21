@@ -68,6 +68,7 @@ CP_API void				CP_System_SetWindowSize				(int new_width, int new_height);
 CP_API void				CP_System_SetWindowPosition			(int x, int y);
 CP_API void				CP_System_Fullscreen				(void);
 CP_API void				CP_System_FullscreenAdvanced		(int targetWidth, int targetHeight);
+CP_API CP_BOOL          CP_System_IsFullscreen              (void);
 CP_API int				CP_System_GetWindowWidth			(void);
 CP_API int				CP_System_GetWindowHeight			(void);
 CP_API int				CP_System_GetDisplayWidth			(void);
@@ -195,6 +196,7 @@ CP_API void				CP_Font_Free						(CP_Font* font);
 CP_API void				CP_Font_Set							(CP_Font font);
 CP_API void				CP_Font_DrawText					(const char* text, float x, float y);
 CP_API void				CP_Font_DrawTextBox					(const char* text, float x, float y, float rowWidth);
+CP_API float			CP_Font_GetTextWidth				(const char* text);
 
 
 //---------------------------------------------------------

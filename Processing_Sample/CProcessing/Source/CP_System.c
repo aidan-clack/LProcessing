@@ -211,6 +211,11 @@ CP_API void CP_System_FullscreenAdvanced(int targetWidth, int targetHeight)
 	CP_SetWindowSizeInternal(targetWidth, targetHeight, true);
 }
 
+CP_API CP_BOOL CP_System_IsFullscreen()
+{
+	return _CORE.isFullscreen;
+}
+
 CP_API int CP_System_GetWindowWidth(void)
 {
 	return _CORE.canvas_width;

@@ -221,3 +221,18 @@ CP_API void CP_Font_DrawTextBox(const char* text, float x, float y, float rowWid
 
 	nvgTextBox(CORE->nvg, x, y, rowWidth, text, NULL);
 }
+
+CP_API float CP_Font_GetTextWidth(const char* text)
+{
+	CP_CorePtr CORE = GetCPCore();
+
+	if (!CORE || !CORE->nvg)
+	{
+		return -1;
+	}
+
+	float bounds[4];
+	nvgTextBounds(CORE->nvg, 0, 0, text, NULL, bounds);
+
+	return bounds[2] - bounds[0];
+}
