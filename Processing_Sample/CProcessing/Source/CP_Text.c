@@ -231,6 +231,11 @@ CP_API float CP_Font_GetTextWidth(const char* text)
 		return -1;
 	}
 
+	if (text == NULL || text[0] == '\0') 
+	{
+		return 0;
+	}
+
 	float bounds[4];
 	nvgTextBounds(CORE->nvg, 0, 0, text, NULL, bounds);
 
