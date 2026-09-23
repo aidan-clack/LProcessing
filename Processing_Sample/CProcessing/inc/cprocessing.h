@@ -305,6 +305,12 @@ CP_API float			CP_Random_Noise						(float x, float y, float z);
 CP_API void				CP_Random_NoiseSeed					(int seed);
 
 
+//---------------------------------------------------------
+// LOGGING:
+//		Logging and severity functions
+CP_API void			    CP_Log								(CP_SEVERITY severity, const char* format, ...);
+CP_API void             CP_Log_SetSeverity					(CP_SEVERITY severity);
+
 #ifdef __cplusplus
 }
 #endif

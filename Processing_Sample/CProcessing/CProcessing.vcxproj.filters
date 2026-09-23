@@ -87,6 +87,9 @@
     <ClInclude Include="Source\Internal_Resources.h">
       <Filter>Internal Headers</Filter>
     </ClInclude>
+    <ClInclude Include="Internal_Log.h">
+      <Filter>Internal Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.c">
@@ -138,6 +141,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GLAD\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CP_Log.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

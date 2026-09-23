@@ -31,7 +31,7 @@ extern "C"
 
 
 //---------------------------------------------------------
-// Eports for DLL functions
+// Exports for DLL functions
 
 #ifdef CPROCESSING_EXPORTS
 	#define DLL_EXPORT __declspec(dllexport)
@@ -375,6 +375,17 @@ typedef enum CP_GAMEPAD
 	GAMEPAD_Y
 } CP_GAMEPAD;
 
+//---------------------------------------------------------
+// LOGGING:
+//		Severity enums and types
+typedef enum CP_SEVERITY
+{
+	CP_INFO,
+	CP_WARNING,
+	CP_ERROR,
+	CP_DEBUG,
+	CP_SEVERITYCOUNT
+} CP_SEVERITY;
 
 #ifdef __cplusplus
 }
