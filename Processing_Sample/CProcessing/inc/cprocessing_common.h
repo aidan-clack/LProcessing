@@ -160,6 +160,14 @@ typedef enum CP_TEXT_ALIGN_VERTICAL
 	CP_TEXT_ALIGN_V_BASELINE	= 1 << 6	// Default, align text vertically to baseline.
 } CP_TEXT_ALIGN_VERTICAL;
 
+//---------------------------------------------------------
+// TEXT SIZE:
+//		Horizontal and vertical text box bounds
+typedef union CP_TextBounds
+{
+	float bounds[4];
+	struct { float left, top, right, bottom; };
+} CP_TextBounds;
 
 //---------------------------------------------------------
 // SOUND GROUP:

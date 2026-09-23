@@ -196,7 +196,7 @@ CP_API void				CP_Font_Free						(CP_Font* font);
 CP_API void				CP_Font_Set							(CP_Font font);
 CP_API void				CP_Font_DrawText					(const char* text, float x, float y);
 CP_API void				CP_Font_DrawTextBox					(const char* text, float x, float y, float rowWidth);
-CP_API float			CP_Font_GetTextWidth				(const char* text);
+CP_API CP_TextBounds	CP_Font_GetTextBounds				(const char* text);
 
 
 //---------------------------------------------------------
