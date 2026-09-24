@@ -380,10 +380,10 @@ typedef enum CP_GAMEPAD
 //		Severity enums and types
 typedef enum CP_SEVERITY
 {
+	CP_DEBUG,
 	CP_INFO,
 	CP_WARNING,
 	CP_ERROR,
-	CP_DEBUG,
 	CP_SEVERITYCOUNT
 } CP_SEVERITY;
 

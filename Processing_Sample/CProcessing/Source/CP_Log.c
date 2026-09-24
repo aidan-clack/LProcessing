@@ -46,7 +46,7 @@ const char* GetLevelString(CP_SEVERITY level) {
 
 CP_API void	CP_Log(CP_SEVERITY severity, const char* format, ...)
 {
-    if (severity > severity_level)
+    if (severity <= severity_level)
         return;
 
     // We may want to explicitly tell the user the buffer size...
