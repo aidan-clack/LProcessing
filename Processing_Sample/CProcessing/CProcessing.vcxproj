@@ -214,9 +214,6 @@ xcopy "$(ProjectDir)soloud\lib\x64\soloud.dll" "$(ProjectDir)lib\x64\*" /s /r /y
     <ClInclude Include="nanovg\src\nanovg_gl_utils.h" />
     <ClInclude Include="nanovg\src\stb_image.h" />
     <ClInclude Include="nanovg\src\stb_truetype.h" />
-    <ClCompile Include="Source\CP_Log.c">
-      <FileType>CppCode</FileType>
-    </ClCompile>
     <ClInclude Include="Source\Internal_File.h" />
     <ClInclude Include="Source\Internal_Image.h" />
     <ClInclude Include="Source\Internal_System.h" />
@@ -239,6 +236,7 @@ xcopy "$(ProjectDir)soloud\lib\x64\soloud.dll" "$(ProjectDir)lib\x64\*" /s /r /y
     <ClCompile Include="Source\CP_Graphics.c" />
     <ClCompile Include="Source\CP_Image.c" />
     <ClCompile Include="Source\CP_Input.c" />
+    <ClCompile Include="Source\CP_Log.c" />
     <ClCompile Include="Source\CP_Math.c" />
     <ClCompile Include="Source\CP_Noise.c" />
     <ClCompile Include="Source\CP_Random.c" />
