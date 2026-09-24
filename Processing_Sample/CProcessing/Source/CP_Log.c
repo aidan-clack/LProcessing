@@ -124,7 +124,7 @@ CP_API void CP_Log_Debug(const char* format, ...)
 
 CP_API void CP_Log_SetSeverity(CP_SEVERITY severity)
 {
-    if (severity < CP_INFO || severity > CP_SEVERITYCOUNT)
+    if (severity < CP_DEBUG || severity > CP_SEVERITYCOUNT)
         return;
 
     severity_level = severity;
