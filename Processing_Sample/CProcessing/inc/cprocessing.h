@@ -149,6 +149,7 @@ CP_API void				CP_Graphics_BeginShape				(void);
 CP_API void				CP_Graphics_AddVertex				(float x, float y);
 CP_API void				CP_Graphics_EndShape				(void);
 CP_API void				CP_Graphics_DrawMask				(float x, float y, float w, float h);
+CP_API void				CP_Graphics_ClearMask				();
 
 
 //---------------------------------------------------------

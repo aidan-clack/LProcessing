@@ -354,3 +354,14 @@ CP_API void	CP_Graphics_DrawMask(float x, float y, float w, float h)
 
 	nvgScissor(CORE->nvg, x, y, w, h);
 }
+
+CP_API void	CP_Graphics_ClearMask()
+{
+	CP_CorePtr CORE = GetCPCore();
+
+	// Context does not exist.
+	if (!CORE->nvg)
+		return;
+
+	nvgResetScissor(CORE->nvg);
+}
