@@ -85,6 +85,31 @@ static void CP_Graphics_DrawRectInternal(float x, float y, float w, float h, flo
 	}
 }
 
+static void CP_Graphics_DrawMaskInternal(float x, float y, float w, float h)
+{
+	CP_CorePtr CORE = GetCPCore();
+	CP_DrawInfoPtr DI = GetDrawInfo();
+
+	// TODO: Should this null check be added to all draw functions?
+	// I think so.
+	if (!CORE || !CORE->nvg || !DI)
+		return;
+
+	switch (DI->rect_mode)
+	{
+	case CP_POSITION_CENTER:
+		x -= w * 0.5f;
+		y -= h * 0.5f;
+		break;
+	case CP_POSITION_CORNER:
+		// default for NanoVG
+	default:
+		break;
+	}
+
+	nvgScissor(CORE->nvg, x, y, w, h);
+}
+
 //------------------------------------------------------------------------------
 // Library Functions:
 //------------------------------------------------------------------------------
@@ -352,7 +377,7 @@ CP_API void	CP_Graphics_DrawMask(float x, float y, float w, float h)
 	if (!CORE->nvg)
 		return;
 
-	nvgScissor(CORE->nvg, x, y, w, h);
+	CP_Graphics_DrawMaskInternal(x, y, w, h);
 }
 
 CP_API void	CP_Graphics_ClearMask()
