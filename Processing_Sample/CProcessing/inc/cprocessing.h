@@ -148,6 +148,7 @@ CP_API void				CP_Graphics_DrawQuadAdvanced		(float x1, float y1, float x2, floa
 CP_API void				CP_Graphics_BeginShape				(void);
 CP_API void				CP_Graphics_AddVertex				(float x, float y);
 CP_API void				CP_Graphics_EndShape				(void);
+CP_API void				CP_Graphics_DrawMask				(float x, float y, float w, float h);
 
 
 //---------------------------------------------------------
@@ -309,6 +310,10 @@ CP_API void				CP_Random_NoiseSeed					(int seed);
 // LOGGING:
 //		Logging and severity functions
 CP_API void			    CP_Log								(CP_SEVERITY severity, const char* format, ...);
+CP_API void			    CP_Log_Info							(const char* format, ...);
+CP_API void			    CP_Log_Warning						(const char* format, ...);
+CP_API void			    CP_Log_Error						(const char* format, ...);
+CP_API void			    CP_Log_Debug						(const char* format, ...);
 CP_API void             CP_Log_SetSeverity					(CP_SEVERITY severity);
 
 #ifdef __cplusplus

@@ -343,3 +343,14 @@ CP_API void CP_Graphics_EndShape(void)
 		nvgStroke(CORE->nvg);
 	}
 }
+
+CP_API void	CP_Graphics_DrawMask(float x, float y, float w, float h)
+{
+	CP_CorePtr CORE = GetCPCore();
+
+	// Context does not exist.
+	if (!CORE->nvg)
+		return;
+
+	nvgScissor(CORE->nvg, x, y, w, h);
+}
